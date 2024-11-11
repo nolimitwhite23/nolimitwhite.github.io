@@ -1,0 +1,62 @@
+body { 
+    margin: 2em;
+    background-color: black;
+    color: white;
+    font-family: "Edu AU VIC WA NT Hand", "cursive";
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding-left: 10px;
+}
+
+ul li {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 1.5rem;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+p {
+    font-size: 2rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    font-size: 1.5rem;
+}
+
+.about-pic {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border: 0px;
+    border-radius: 1000px;
+}
+
+.pic-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.logo {
+    width: 500px;
+    height: 30vh;
+}
