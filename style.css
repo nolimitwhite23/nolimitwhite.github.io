@@ -85,3 +85,52 @@ section {
     }
     
 }
+
+@media (max-width: 600px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    h1 {
+        margin: 10px 0;
+    }
+
+    body {
+        line-height: 1.6;
+        margin: 5px;
+        padding: 2px;
+        overflow-wrap: break-word;
+    }
+
+    .about-pic {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border: 0px;
+        object-fit: cover;
+        border-radius: 1000px;
+    }
+
+    ul li a {
+        font-size: 0.95rem;
+        font-weight: 650;
+    }
+
+    p {
+        font-size: 1.2rem;
+        word-wrap: break-word;
+        word-break: break-all;
+        margin-bottom: 1em;
+    }
+    
+}
