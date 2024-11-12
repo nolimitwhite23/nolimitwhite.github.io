@@ -60,3 +60,28 @@ section {
     width: 500px;
     height: 30vh;
 }
+
+@media (max-width: 600px) {
+    .about-pic {
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        border: 0px;
+        border-radius: 1000px;
+    }
+
+    .logo {
+        width: 200px;
+        height: 20vh;
+    }
+
+    ul li a {
+        font-size: 1.35rem;
+        margin-right: 20px;
+    }
+
+    p {
+        font-size: 0.90rem;
+    }
+    
+}
