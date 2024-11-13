@@ -128,8 +128,6 @@ section {
 
     p {
         font-size: 1.2rem;
-        word-wrap: break-word;
-        word-break: break-all;
         margin-bottom: 1em;
     }
     
