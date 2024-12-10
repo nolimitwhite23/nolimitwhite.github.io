@@ -3,15 +3,12 @@ body {
     background-color: black;
     color: white;
     font-family: "Edu AU VIC WA NT Hand", "cursive";
-    font-size: 1rem; /* Adjust font size to scale well on mobile */
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 20px; /* Adjust spacing for smaller screens */
-    flex-wrap: wrap; /* Allow elements to wrap to the next line if needed */
 }
 
 ul {
@@ -38,16 +35,15 @@ p {
 
 h1 {
     text-align: center;
-    font-size: 2.5vw; /* Use viewport width for scaling text */
 }
 
 section {
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
 .about-pic {
-    width: 40vw;  /* Use viewport width for responsive sizing */
-    height: 40vw; /* Keep a square ratio */
+    width: 500px;
+    height: 500px;
     object-fit: cover;
     border: 0px;
     border-radius: 1000px;
@@ -61,14 +57,16 @@ section {
 }
 
 .logo {
-    width: 20vw;  /* Responsive width using viewport width */
-    height: 10vh;  /* Height in viewport height */
+    width: 500px;
+    height: 30vh;
 }
 
 .services {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
     align-items: center;
-    flex-wrap: nowrap;
 }
 
 .icons {
@@ -83,12 +81,119 @@ section {
     margin-right: 10px;
 }
 
+
 .before-after {
-    width: 30vw;  /* Adjust size for mobile using viewport units */
-    height: 30vw;  /* Keep image circular and responsive */
+    width: 500px;
+    height: 500px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 500px;
     border: 0;
 }
 
-/* Optional: If you don't want any change on small screens, remove media queries altogether */
+
+
+
+@media (max-width: 600px) {
+    .about-pic {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border: 0px;
+        border-radius: 50%;
+        margin: 0;
+    }
+
+    .logo {
+        width: 55px;
+        height: 125px;
+    }
+
+    ul li a {
+        font-size: 1.35rem;
+        margin-right: 20px;
+    }
+
+    p {
+        font-size: 0.3rem;
+    }
+    
+}
+
+@media (max-width: 600px) {
+
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    h1 {
+        margin: 10px 0;
+    }
+
+    body {
+        line-height: 1.6;
+        margin: 5px;
+        padding: 2px;
+        overflow-wrap: break-word;
+        font-size: 1.2;
+    }
+
+    .about-pic {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border: 0px;
+        object-fit: cover;
+        border-radius: 1000px;
+    }
+
+    ul li a {
+        font-size: 0.95rem;
+        font-weight: 650;
+    }
+
+    p {
+        font-size: 0.8rem;
+        margin-bottom: 1em;
+    }
+    
+    .services {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+    }
+    
+    .img-container {
+        margin-left: 20px;
+    }
+
+    .img-text {
+        margin-right: 10px;
+        white-space: nowrap;
+        max-width: 50%;
+        overflow: hidden;
+        flex-shrink: 0;
+    }
+    
+    .before-after {
+        width: 25vh;
+        height: 25vh;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 0;
+    }
+    
+
+}
