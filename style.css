@@ -143,6 +143,7 @@ section {
         padding: 2px;
         overflow-wrap: break-word;
         font-size: 1.2;
+        max-width: 90%;
     }
 
     .about-pic {
@@ -166,6 +167,7 @@ section {
     }
     
     .services {
+        margin-left: 10px;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -176,20 +178,19 @@ section {
     }
     
     .img-container {
-        margin-left: 20px;
+        margin-left: 5px;
     }
 
     .img-text {
-        margin-right: 10px;
-        white-space: nowrap;
+        margin-left: 30px;
         max-width: 50%;
         overflow: hidden;
         flex-shrink: 0;
     }
     
     .before-after {
-        width: 25vh;
-        height: 25vh;
+        width: 200px;
+        height: 200px;
         object-fit: cover;
         border-radius: 50%;
         border: 0;
