@@ -3,12 +3,15 @@ body {
     background-color: black;
     color: white;
     font-family: "Edu AU VIC WA NT Hand", "cursive";
+    font-size: 1rem; /* Adjust font size to scale well on mobile */
 }
 
 .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px; /* Adjust spacing for smaller screens */
+    flex-wrap: wrap; /* Allow elements to wrap to the next line if needed */
 }
 
 ul {
@@ -35,6 +38,7 @@ p {
 
 h1 {
     text-align: center;
+    font-size: 2.5vw; /* Use viewport width for scaling text */
 }
 
 section {
@@ -42,8 +46,8 @@ section {
 }
 
 .about-pic {
-    width: 500px;
-    height: 500px;
+    width: 40vw;  /* Use viewport width for responsive sizing */
+    height: 40vw; /* Keep a square ratio */
     object-fit: cover;
     border: 0px;
     border-radius: 1000px;
@@ -57,98 +61,34 @@ section {
 }
 
 .logo {
-    width: 500px;
-    height: 30vh;
+    width: 20vw;  /* Responsive width using viewport width */
+    height: 10vh;  /* Height in viewport height */
 }
 
 .services {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    flex-wrap: nowrap;
 }
 
-
-
-@media (max-width: 600px) {
-    .about-pic {
-        width: 50px;
-        height: 50px;
-        object-fit: cover;
-        border: 0px;
-        border-radius: 50%;
-        margin: 0;
-    }
-
-    .logo {
-        width: 125px;
-        height: 20vh;
-    }
-
-    ul li a {
-        font-size: 1.35rem;
-        margin-right: 20px;
-    }
-
-    p {
-        font-size: 0.90rem;
-    }
-    
+.icons {
+    padding: 50px;
 }
 
-@media (max-width: 600px) {
-
-
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        gap: 15px;
-        width: 100%;
-        padding: 0 15px;
-    }
-
-    h1 {
-        margin: 10px 0;
-    }
-
-    body {
-        line-height: 1.6;
-        margin: 5px;
-        padding: 2px;
-        overflow-wrap: break-word;
-    }
-
-    .about-pic {
-        width: 100%;
-        max-width: 100%;
-        height: auto;
-        object-fit: cover;
-        border: 0px;
-        object-fit: cover;
-        border-radius: 1000px;
-    }
-
-    ul li a {
-        font-size: 0.95rem;
-        font-weight: 650;
-    }
-
-    p {
-        font-size: 1.2rem;
-        margin-bottom: 1em;
-    }
-    
-    .services {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-    
-
+.img-container {
+    margin-left: 100px;
 }
+
+.img-text {
+    margin-right: 10px;
+}
+
+.before-after {
+    width: 30vw;  /* Adjust size for mobile using viewport units */
+    height: 30vw;  /* Keep image circular and responsive */
+    object-fit: cover;
+    border-radius: 50%;
+    border: 0;
+}
+
+/* Optional: If you don't want any change on small screens, remove media queries altogether */
